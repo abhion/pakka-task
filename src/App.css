@@ -1,38 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: #f2f2f2;
+}
+.logoWrapper {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoWrapper + h3 {
+  font-size: 40px;
+  color: rgb(246 12 37);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 18px;
+}
+.logo {
+  width: 50px;
+}
+.appWrapper {
+  width: 450px;
+  margin: auto;
+  min-height: 80vh;
+  background-color: white;
+  box-shadow: 0px 0px 4px 0px #bbbbbb;
+}
+.btnWrapperRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.letterBtn {
+  flex-basis: 45px;
+  height: 45px;
+  border: 2px solid rgb(246 12 37 / 72%);
+  border-radius: 50%;
+  color: rgb(246 12 37);
+  background-color: white;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: all 180ms ease;
+  font-weight: 700;
+}
+.letterBtn:hover {
+  background-color: rgb(246 12 37);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.newWordBtn {
+  background-color: rgb(246 12 37);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 15px 0;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.newWordBtn:hover {
+  background-color: rgb(236 13 37);
+}
+.newWordWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+}
+.newWord {
+  color: rgb(246 12 37);
+  font-weight: 400;
+}
+.listWrapper {
+  margin-top: 12px;
+  padding: 5px 35px;
+}
+.listItem {
+  font-size: 16px;
+  text-decoration: dotted;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 8px;
+  align-items: center;
+  margin: 15px 0;
+}
+.wordLengthWrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: rgb(236 13 37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wordWrapper {
+  border-bottom: dotted;
+  font-size: 18px;
+}
+.progressBarWrapper {
+  margin: 15px 0;
+  background-color: #ebb186;
+  height: 13px;
+}
+.progressWidth {
+  height: 100%;
+  background-color: rgb(236 13 37);
+  transition: all 280ms ease;
 }
